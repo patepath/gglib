@@ -79,7 +79,7 @@ func main() {
 
 	var v1 = r.Group("/v1")
 	{
-		v1.GET("/user", getUser)
+		v1.GET("/user", usercontroller.getUser)
 	}
 
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
